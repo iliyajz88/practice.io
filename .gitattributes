@@ -1,41 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My First Project</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Register</title>
   <style>
     body {
-      margin: 0;
-      height: 40vh;
+      font-family: Arial;
+      background: #e9eef3;
       display: flex;
-      justify-content: center;
       align-items: center;
-      background: rgb(184, 199, 184);
-      color: black;
-      font-family: 'Poppins', sans-serif;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
     }
     .box {
-      background: rgb(195, 178, 178);
-      padding: 40px;
-      border-radius: 12px;
-      text-align: center;
-      width: 70%;
-      line-height: 1.8;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 280px;
     }
-    h1 {
-      font-weight: 600;
+    h2 {
+      text-align: center;
+      margin-bottom: 15px;
+      color: #333;
+    }
+    label {
+      display: block;
+      margin: 8px 0 4px;
+      font-size: 14px;
+      color: #444;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      border: 0;
+      border-radius: 4px;
+      background: #0077cc;
+      color: #fff;
+      font-size: 15px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #005fa3;
     }
   </style>
 </head>
 <body>
   <div class="box">
-    <h1>My name is Iliya Jozi </h1>
-    <p>
-      <u>I</u> <u>am</u> <u>learning</u> <u>HTML</u>, <u>CSS</u>, <u>and</u> <u>JavaScript</u>. 
-      <u>It</u> <u>is</u> <u>fun</u> <u>to</u> <u>practice</u> <u>and</u> <u>see</u> <u>the</u> 
-      <u>results</u> <u>on</u> <u>my</u> <u>screen</u>. 
-    </p>
-    <p>
-      <u>Every</u> <u>day</u> <u>I</u> <u>try</u> <u>to</u> <u>learn</u> <u>something</u> 
-      <u>new</u> <u>and</u> <u>practice</u> <u>more</u>. <u>Thi
+    <h2>Register</h2>
+    <form>
+      <label>Email</label>
+      <input type="email" required>
+
+      <label>Password</label>
+      <input type="password" required>
+
+      <label>Confirm Password</label>
+      <input type="password" required>
+
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+</body>
+</html>
